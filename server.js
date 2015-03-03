@@ -4,7 +4,7 @@
 	var app				= express();
 	var bodyParser		= require('body-parser');
 	var mongojs			= require('mongojs');
-	var db				= mongojs("students",["studentsData"]); 
+	var db				= mongojs("mongodb://student:student@ds061548.mongolab.com:61548/students",["studentsData"]); 
 	/*
 	app.get('/',function(req, res){
 		res.send("Hello World");
